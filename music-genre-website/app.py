@@ -8,6 +8,8 @@ import secrets
 app = Flask(__name__)
 bootstrap = Bootstrap4(app)
 
+# Khoo is cool
+
 # Spotify credentials
 client_id = "08afbd9799f847a68d2e28997f98f0aa"
 client_secret = "2cd6d23b1eed44e6ab37ef7abd9eb809"
