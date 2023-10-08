@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% from 'bootstrap4/form.html' import render_form %}
+
+{% block styles %}
+  {{ super() }}
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="text-center my-5">Souta's Music Genre Classification Tool</h1>
+    <div class="my-5 mx-5">
+      {{ render_form(form) }}
+    </div>
+</div>
+<footer class="footer">
+<div class="container">
+    <span class="text-muted"></span>
+    </div>
+</footer>
+{% endblock %}

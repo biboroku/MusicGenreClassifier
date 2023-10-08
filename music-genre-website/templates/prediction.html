@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% from 'bootstrap4/form.html' import render_form %}
+
+{% block styles %}
+  {{ super() }}
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center my-5">Souta's Music Genre Classification Tool</h1>
+    <div class="my-5 mx-5">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Your favourite playlist is likely a {{ predicted_genre }} playlist!</h5>
+              <p class="card-text">
+                {{ first_percent }} of the songs are likely {{ first_genre }} songs
+                while {{ second_percent }} of the songs are likely {{ second_genre }} songs.
+              </p>
+              <a href="#" class="card-link">Classify the genre of another playlist</a>
+              <a href="#" class="card-link">Re-train your model with other playlists</a>
+            </div>
+          </div>
+    </div>
+</div>
+{% endblock content %}
